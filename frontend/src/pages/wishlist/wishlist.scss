@@ -1,0 +1,47 @@
+@import "./../../assets/style/varibles/varisbles.scss";
+
+.ourMenu {
+  width: 100%;
+  background-color: rgb(250, 250, 250);
+  padding: 90px 0px;
+  .containerr {
+    width: 65%;
+
+    .choose-menu-type {
+      @include display-flex(center, center);
+      gap: 0px;
+
+      .menu-type-item {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px 50px;
+        p {
+          color: $basic-color;
+        }
+      }
+    }
+
+    .menu-intro {
+      margin: auto;
+      @include display-flex(center, center);
+      margin-bottom: 60px;
+      font-family: "Muli";
+      flex-direction: column;
+      span {
+        color: $text-color;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+      h2 {
+        color: rgb(34, 33, 33);
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+      }
+    }
+
+    .menu {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+}

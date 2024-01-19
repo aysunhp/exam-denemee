@@ -1,0 +1,48 @@
+@import "./../../assets/style/varibles/varisbles.scss";
+
+.hero {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  @include display-flex(center, center);
+  .containerr {
+    width: 65%;
+    font-size: "Indie Flower", cursive;
+    @include display-flex(center, center);
+    flex-direction: column;
+    gap: 10px;
+    h1 {
+      font-size: 40px;
+      color: white;
+    }
+
+    button {
+      border: 1px solid white;
+      padding: 20px 50px;
+      font-weight: 700;
+      color: white;
+      background-color: transparent;
+    }
+  }
+}
+
+.hero1 {
+  background-image: url("https://preview.colorlib.com/theme/tasty/images/bg_2.jpg");
+}
+
+.hero2 {
+  background-image: url("https://preview.colorlib.com/theme/tasty/images/bg_2.jpg");
+}
+
+.hero3 {
+  background-image: url("https://preview.colorlib.com/theme/tasty/images/bg_3.jpg");
+}
+
+.swiper-button-prev {
+  color: white !important;
+}
+
+.swiper-button-next {
+  color: white !important;
+}

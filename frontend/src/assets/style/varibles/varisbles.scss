@@ -1,0 +1,8 @@
+$basic-color: #404044;
+@mixin display-flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+$text-color: #ababb0;

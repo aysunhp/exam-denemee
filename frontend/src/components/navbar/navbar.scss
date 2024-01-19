@@ -1,0 +1,68 @@
+@import "./../../assets/style/varibles/varisbles.scss";
+
+header {
+  width: 100%;
+  padding: 30px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 3;
+  .container {
+    width: 65%;
+    margin: 0px;
+    @include display-flex(space-between, center);
+
+    .logo {
+      p {
+        color: white;
+        border: 1px solid white;
+        padding: 10px 20px;
+        font-weight: 700;
+      }
+    }
+
+    ul {
+      @include display-flex(flex-end, center);
+      gap: 20px;
+      li {
+        color: #8f9193;
+        font-size: 17px;
+      }
+    }
+
+    .mobile-menu-bar {
+      display: none;
+    }
+  }
+
+  .mobile-nav {
+    margin-top: 10px;
+    display: none;
+    ul {
+      li {
+        color: #8f9193;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    background-color: $basic-color;
+    .container {
+      width: 95%;
+      ul {
+        display: none;
+      }
+
+      .mobile-menu-bar {
+        @include display-flex(flex-end, center);
+        gap: 7;
+        p {
+          color: #8f9193;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

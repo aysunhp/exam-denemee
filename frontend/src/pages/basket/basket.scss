@@ -1,0 +1,29 @@
+@import "./../../assets/style/varibles/varisbles.scss";
+
+.basket {
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    padding: 90px 0px;
+    .containerr {
+      width: 90%;
+      .menu-intro {
+        margin: auto;
+        @include display-flex(center, center);
+        margin-bottom: 60px;
+        font-family: "Muli";
+        flex-direction: column;
+        span {
+          color: $text-color;
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+        h2 {
+          color: rgb(34, 33, 33);
+          font-weight: 500;
+          font-size: 34px;
+          line-height: 40px;
+        }
+      }
+
+    }
+}
